@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Hello Vue.js</title>
-	<script src="https://unpkg.com/vue"></script>
+  <title>Hello Vue.js</title>
+  <meta charset="utf-8"/>
+  <script src="https://unpkg.com/vue"></script>
+  
 </head>
 <body>
-	<div id="test">
-  		<p>{{message}}</p>
-  		<p>{{name}}</p>
-	</div>
+  <div id="test">
+      <p>{{message}}</p>
+      <p id="pp" v-if="seen" style="background-color: red;">Oleg</p>
+  </div>
+  <div id="paraid">
+    <p>{{para}}</p>
+    <button v-on:click="ReverseMessage"> реверс</button>
+  </div>
 </body>
-<script type="text/javascript">
-	var app = new Vue({
-  		el: '#test',
-  		data: {
-    		message: 'Hello Vue.js!',
-    		name: "Oleg",
-  		}
-	})
-</script>
+<script type="text/javascript" src="script.js"></script>
 </html>
 
 
