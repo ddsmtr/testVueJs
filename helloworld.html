@@ -13,7 +13,16 @@
   </div>
   <div id="paraid">
     <p>{{para}}</p>
-    <button v-on:click="ReverseMessage"> реверс</button>
+    <button v-on:click="ReverseMessage"> реверс</button> <!-- v-on типа событие на что ДВОЕТОЧИЕ на клик или что то еще и дальше функция --> 
+  </div>
+   <div id="test_input">
+     <p>{{message}}</p>
+     <input type="text" name="" v-model="message">
+   </div>
+  <div id="new">
+    <ol>
+      <li v-for="i in myarray">{{i.text}}</li>
+    </ol>
   </div>
 </body>
 <script type="text/javascript" src="script.js"></script>

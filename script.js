@@ -16,8 +16,22 @@
         this.para = this.para.split('').reverse().join('');
       },  
     }
-      
-
+  });
+  var inp = new Vue({
+    el:"#test_input",
+    data: {
+      message: "Hello Vue!"
+    },
+  });
+  var testfor = new Vue({
+    el:"#new",
+    data: {
+      myarray: [
+        {text: "Oleg"},
+        {text: "Nastenka"},
+        {text: "Slastenka"},
+      ],
+    },
   });
 
   var a = document.getElementById("pp");
